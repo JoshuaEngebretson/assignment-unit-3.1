@@ -87,8 +87,18 @@ console.log('The foods are now', favoriteFoods);
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
-favoriteFoods.splice( 1, 0, "pineapple" );
+favoriteFoods.splice( 1, 1, "pineapple" );
 console.log( 'Added', favoriteFoods[1], ' to the list. My favorite foods are now', favoriteFoods );
+/*
+Or another way to replace with less code would be the following
+*/
+favoriteFoods[1]="zucchini";
+console.log(favoriteFoods);
+/*
+This would allow us to directly modify a specific position within the array, but would only allow for one item being adjusted.
+The version with splice would allow for multiple deletions / additions depending on how you wrote it.
+*/
+
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
